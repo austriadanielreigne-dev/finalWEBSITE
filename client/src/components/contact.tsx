@@ -115,18 +115,6 @@ export default function Contact() {
               </div>
 
               <div className="flex items-start space-x-4">
-                <div className="w-12 h-12 bg-warm-gold rounded-full flex items-center justify-center flex-shrink-0">
-                  <Phone className="text-white" />
-                </div>
-                <div>
-                  <h3 className="font-heading text-lg font-bold text-methodist-blue mb-1">
-                    Phone
-                  </h3>
-                  <p className="text-warm-gray">(555) 123-4567</p>
-                </div>
-              </div>
-
-              <div className="flex items-start space-x-4">
                 <div className="w-12 h-12 bg-soft-green rounded-full flex items-center justify-center flex-shrink-0">
                   <Mail className="text-white" />
                 </div>
@@ -134,37 +122,23 @@ export default function Contact() {
                   <h3 className="font-heading text-lg font-bold text-methodist-blue mb-1">
                     Email
                   </h3>
-                  <p className="text-warm-gray">info@blessedumc.org</p>
-              
-                </div>
-              </div>
-
-              <div className="flex items-start space-x-4">
-                <div className="w-12 h-12 bg-methodist-blue rounded-full flex items-center justify-center flex-shrink-0">
-                  <Clock className="text-white" />
-                </div>
-                <div>
-                  <h3 className="font-heading text-lg font-bold text-methodist-blue mb-1">
-                    Office Hours
-                  </h3>
-                  <p className="text-warm-gray">
-                    Monday - Friday: 9:00 AM - 5:00 PM
-                    <br />
-                    Saturday: 9:00 AM - 1:00 PM
-                    <br />
-                    Sunday: Closed
-                  </p>
+                  <p className="text-warm-gray">iamblessedchurch@gmail.com</p>
                 </div>
               </div>
             </div>
 
-            {/* Map placeholder */}
-            <div className="bg-gray-200 rounded-xl h-64 flex items-center justify-center">
-              <div className="text-center text-warm-gray">
-                <Map className="text-4xl mb-4 mx-auto" />
-                <p className="font-medium">Interactive Map</p>
-                <p className="text-sm">Click for directions</p>
-              </div>
+            {/* Google Maps Embed */}
+            <div className="rounded-xl overflow-hidden h-64">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4585.426065009781!2d120.92917507573804!3d14.331747283601128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397d4fcea32b8f5%3A0xaacc0220724690e7!2sBlessed%20United%20Methodist%20Church!5e1!3m2!1sen!2sus!4v1755699777991!5m2!1sen!2sus"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen={false}
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Blessed United Methodist Church Location"
+              />
             </div>
           </div>
 
