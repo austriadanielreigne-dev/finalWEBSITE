@@ -1,7 +1,9 @@
 import { Button } from "@/components/ui/button";
+import { useNavigate } from "react-router-dom";
 import { Heart, Users, BookOpen, Handshake, CheckCircle, Star } from "lucide-react";
 
 export default function About() {
+  const navigate = useNavigate();
   return (
     <section id="about" className="py-24 bg-gradient-to-br from-white via-gray-50 to-blue-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -70,6 +72,7 @@ export default function About() {
               <Button
                 className="bg-methodist-blue text-white px-8 py-4 rounded-full text-lg font-bold hover:bg-methodist-blue/90 transition-all transform hover:scale-105 shadow-lg w-full"
                 data-testid="button-learn-more"
+                onClick={() => navigate('/our-story')}
               >
                 Discover Our Story
               </Button>
