@@ -12,6 +12,7 @@ function Router() {
     <Switch>
       <Route path="/" component={Home} />
       <Route path="/umyf" component={UMYF} />
+      <Route path="/our-story" component={require('@/pages/our-story').default} />
       <Route component={NotFound} />
     </Switch>
   );
